@@ -10,6 +10,8 @@ body {
   max-width: 1170px;
 }
 
+/* Header 
+====================================================*/
 .header__inner {
   display: flex;
   justify-content: space-between;
@@ -57,17 +59,136 @@ body {
   text-align: right;
 }
 
+/* Top 
+====================================================*/
+.top {
+  margin-bottom: 75px;
+}
 
+.top__images {
+  margin: 0 auto;
+  max-width: 1720px;
+  min-height: 545px;
+  background-image: url(../images/top/top-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
+.top__wrapper {
+  margin-top: -450px;
+}
 
+.top__inner {
+  display: flex;
+  justify-content: space-between;
+}
 
+.top__inner-img {
+  margin-left: 125px;
+}
 
+.top__inner-form {
+  max-width: 570px;
+  width: 100%;
+}
 
+.top__inner-suptitle {
+  margin-top: 80px;
+  margin-bottom: 25px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
+.top__inner-title {
+  margin-bottom: 40px;
+  font-size: 60px;
+  font-weight: 600;
+  color: #ffffff;
+}
 
+.top__inner-text {
+  margin-bottom: 62px;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 24px;
+}
 
+.top-form {
+  padding: 20px;
+  background-color: #ffffff;
+}
 
+.top-form form {
+  border: 1px solid #c8dcba;
+  position: relative;
+} 
 
+.top-form__inner {
+  padding: 50px 50px 118px 50px;
+}
+
+.top-form__title {
+  margin-bottom: 35px;
+  width: 195px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #303030;
+  line-height: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.top-form input {
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #499514;
+  border: none;
+  border-bottom: 1px solid #c8dcba;
+  outline-color: #c8dcba;
+} 
+
+.top-form input::placeholder {
+  color: #c8dcba;
+} 
+
+.top-form button {
+  padding: 22px 110px 22px 70px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #7eb252;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: background-color .2s linear;
+} 
+
+.top-form button:hover,
+.top-form button:focus {
+  background-color: #63933a;
+}
+
+.top-form button:after {
+  content: '';
+  background-image: url(../images/top/arrow-right.png);
+  width: 31px;
+  height: 9px;
+  position: absolute;
+  right: 60px;
+  top: 25px;
+}
 
 
 
