@@ -1,0 +1,174 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1170px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  min-height: 105px;
+  align-items: center;
+}
+
+.header__text {
+  margin-right: auto;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #9a9a9a;
+}
+
+.header__phone-text {
+  display: block;
+}
+
+.header__phone {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header__phone-link {
+  color: #303030;
+  text-decoration: none;
+  position: relative;
+}
+
+.header__phone-link::before{
+  content: '';
+  background-image: url(../images/header/phone.svg);
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 5px;
+  left: -27px;
+}
+
+.header__phone-text {
+  padding-top: 3px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #9a9a9a;
+  text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
