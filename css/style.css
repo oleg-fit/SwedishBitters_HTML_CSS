@@ -272,14 +272,29 @@ body {
 }
 
 .tab {
-    padding: 20px 0;
+    display: flex;
+    padding: 24px 40px 24px 0;
     font-size: 14px;
     font-weight: 600;
     color: #303030;
     line-height: 20px;
+    align-items: center;
     text-transform: uppercase;
     border-bottom: 1px solid #e6efde;
     cursor: pointer;
+}
+
+.tab.active {
+    position: relative;
+}
+
+.tab.active::after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    background-image: url(../images/list/arow.svg);
+    width: 8px;
+    height: 13px;
 }
 
 .tab span {
@@ -288,6 +303,7 @@ body {
 }
 
 .tabs__content{
+    margin-top: -170px;
     min-width: 500px;
     height: 689px;
     background-image: url(../images/list/list_img.jpg);
@@ -360,28 +376,201 @@ body {
     top: 165px;
 }
 
+.tabs__box {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.tabs__box  .tab {
+    display: flex;
+    font-size: 16px;
+    font-weight: 400;
+    width: 50%;
+    align-items: center;
+    text-transform: none;
+}
 
+.tabs__box  .tab span {
+    font-size: 12px;
+}
 
+.tabs__box  .tab:first-child,
+.tabs__box  .tab:nth-child(3) {
+    padding-right: 25px;
+    border-right: 1px solid #e6efde;
+}
 
+.tabs__box  .tab:last-child,
+.tabs__box  .tab:nth-child(2) {
+    padding-left: 25px;
+}
 
+.tabs__box .tab.active::after {
+    display: none;
+}
 
+.tabs__reviews {
+    padding: 20px;
+    max-width: 430px;
+    background-color: #f6f9f3;
+    position: absolute;
+    bottom: 0;
+}
 
+.tabs__reviews-inner {
+    padding: 30px 50px 30px 40px;
+    border: 1px solid #c5dab5;
+}
 
+.tabs__reviews-text {
+    font-size: 16px;
+    color: #303030;
+    line-height: 24px;
+}
 
+.tabs__reviews-link {
+    padding: 0 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #7eb152;
+    background-color: #f6f9f3;
+    position: absolute;
+    bottom: 15px;
+}
 
+.list__link {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.list__link a {
+    margin-top: 20px;
+    padding: 22px 100px 22px 120px;
+    min-width: 500px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background-color: #7eb252;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    position: relative;
+}
 
+.list__link a:after {
+    content: '';
+    background-image: url(../images/top/arrow-right.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 60px;
+    top: 25px;
+}
 
+/* Popularity
+====================================================*/
+.popularity {
+    padding-top: 200px;
+}
 
+.popularity__wraper {
+    margin: 0 auto;
+    max-width: 1720px;
+    min-height: 645px;
+    background-image: url(../images/popularity/women.jpg);
+    background-repeat: no-repeat;
+}
 
+.popularity__inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
 
+.popularity__box {
+    padding: 20px;
+    background-color: #ffffff;
+}
 
+.popularity__box-text {
+    margin-right: 70px;
+    padding: 30px;
+    font-size: 16px;
+    color: #303030;
+    line-height: 24px;
+    border: 1px solid #c5dab5;
+}
 
+.popularity__box-link {
+    padding: 22px 85px 22px 27px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1px;
+    background-color: #7eb252;
+    text-transform: uppercase;
+    text-decoration: none;
+    outline: none;
+    position: absolute;
+}
 
+.popularity__box-link::after {
+    content: '';
+    background-image: url(../images/top/arrow-right.png);
+    width: 31px;
+    height: 9px;
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
 
+.popularity__right {
+    padding-right: 15px;
+    max-width: 500px;
+    width: 100%;
+}
 
+.popularity__right-title {
+    margin-top: 55px;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    color: #303030;
+}
 
+.popularity__right-subtitle {
+    padding: 50px 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #303030;
+    text-transform: uppercase;
+}
+
+.popularity__right-list {
+    list-style: none;
+}
+
+.popularity__right-list li {
+    margin-bottom: 45px;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #303030;
+    line-height: 22px;
+    position: relative;
+}
+
+.popularity__right-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 8px;
+    height: 13px;
+    background-image: url(../images/list/arow.svg);
+    transform: translateY(-50%);
+}
 
 
 
